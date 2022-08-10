@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Chocolate 🍫</title>
+    <meta
+      name="description"
+      content="This is a simple site about dark chocolate."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love <em>chocolate</em></h1>
+      <h2>Especially <em>dark chocolate</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/023/original/how-to-temper-chocolate-SQUARE-1-1536x1536.jpg?1652277095"
+        alt="Melted Chocolate"
+      />
+      <p>
+        Chocolate is a food product made from roasted and ground cacao pods,
+        that is available as a liquid, solid or paste, on its own or as a
+        flavoring agent in other foods. <br />
+        <br />
+      </p>
+      <span>
+        Cacao has been consumed in some form since at least the Olmec
+        civilization (19th-11th century BCE), and the majority of Mesoamerican
+        people - including the Maya and Aztecs - made chocolate beverages.
+      </span>
+      <a
+        href="https://en.wikipedia.org/wiki/Chocolate"
+        target="blank"
+        class="learn-more"
+      >
+        Learn more on <strong> Wikipedia</strong></a
+      >
+      <button class="buy-button">➨ Buy Dark Chocolate</button>
+      <hr />
+      <p class="footer">This page was built by Michelle Mullane</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("Please enter your name below:");
+        let email = prompt("Please enter your email address below:");
+        let emoji = prompt("What is your favorite emoji?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Thank you, " +
+              name +
+              "!  We'll be in touch with the email address you provided.  Meanwhile, eat lots of dark chocolate! " +
+              emoji
+          );
+        } else {
+          alert(
+            "Sorry, we cannot process your order without a name and email address.  Have a great day! " +
+              emoji
+          );
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
